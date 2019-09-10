@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 03 2019 г., 11:53
+-- Время создания: Сен 10 2019 г., 10:05
 -- Версия сервера: 5.5.58
 -- Версия PHP: 7.2.0
 
@@ -72,13 +72,11 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `title`, `categoryId`, `code`, `count`, `price`, `image`, `availability`, `brand`, `description`, `is_new`, `is_recommended`, `status`) VALUES
-(38, 'Ноутбук Acer TravelMate TMB115', 13, 1953212, 0, 275, 'product1.jpg', 1, 'Acer', 'Экран 11.6\'\' (1366x768) HD LED, матовый / Intel Celeron N2840 (2.16 ГГц) / RAM 2 ГБ / HDD 500 ГБ / Intel HD Graphics / без ОД / LAN / Wi-Fi / Bluetooth 4.0 / веб-камера / Linpus / 1.32 кг / черный', 0, 0, 1),
-(39, 'Ноутбук Lenovo Flex 10', 2, 1602042, 0, 370, 'product1.jpg', 0, 'Lenovo', 'Экран 10.1\" (1366x768) HD LED, сенсорный, глянцевый / Intel Celeron N2830 (2.16 ГГц) / RAM 2 ГБ / HDD 500 ГБ / Intel HD Graphics / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 8.1 / 1.2 кг / черный', 0, 0, 1),
-(40, 'Ноутбук Asus X751MA', 3, 2028367, 0, 430, 'product1.jpg', 1, 'Asus', 'Экран 17.3\" (1600х900) HD+ LED, глянцевый / Intel Pentium N3540 (2.16 - 2.66 ГГц) / RAM 4 ГБ / HDD 1 ТБ / Intel HD Graphics / DVD Super Multi / LAN / Wi-Fi / Bluetooth 4.0 / веб-камера / DOS / 2.6 кг / белый', 0, 1, 1),
-(41, 'Samsung Galaxy Tab S 10.5 16GB', 4, 1129365, 0, 780, 'product1.jpg', 1, 'Samsung', 'Samsung Galaxy Tab S создан для того, чтобы сделать вашу жизнь лучше. Наслаждайтесь своим контентом с покрытием 94% цветов Adobe RGB и 100000:1 уровнем контрастности, который обеспечивается sAmoled экраном с функцией оптимизации под отображаемое изображение и окружение. Яркий 10.5” экран в ультратонком корпусе весом 467 г порадует вас высоким уровнем портативности. Работа станет проще вместе с Hancom Office и удаленным доступом к вашему ПК. E-Meeting и WebEx – отличные помощники для проведения встреч, когда вы находитесь вне офиса. Надежно храните ваши данные благодаря сканеру отпечатка пальцев.', 1, 1, 1),
-(42, 'Samsung Galaxy Tab S 8.4 16GB', 5, 1128670, 0, 640, 'product1.jpg', 1, 'Samsung', 'Экран 8.4\" Super AMOLED (2560x1600) емкостный Multi-Touch / Samsung Exynos 5420 (1.9 ГГц + 1.3 ГГц) / RAM 3 ГБ / 16 ГБ встроенной памяти + поддержка карт памяти microSD / Bluetooth 4.0 / Wi-Fi 802.11 a/b/g/n/ac / основная камера 8 Мп, фронтальная 2.1 Мп / GPS / ГЛОНАСС / Android 4.4.2 (KitKat) / 294 г / белый', 0, 0, 1),
-(43, 'Gazer Tegra Note 7', 6, 683364, 0, 210, 'product1.jpg', 1, 'Gazer', 'Экран 7\" IPS (1280x800) емкостный Multi-Touch / NVIDIA Tegra 4 (1.8 ГГц) / RAM 1 ГБ / 16 ГБ встроенной памяти + поддержка карт памяти microSD / Wi-Fi / Bluetooth 4.0 / основная камера 5 Мп, фронтальная - 0.3 Мп / GPS / ГЛОНАСС / Android 4.4.2 (KitKat) / вес 320 г', 0, 0, 1),
-(44, 'Монитор 23\" Dell E2314H Black', 7, 355025, 0, 175, 'product2.jpg', 1, 'Dell', 'С расширением Full HD Вы сможете рассмотреть мельчайшие детали. Dell E2314H предоставит Вам резкое и четкое изображение, с которым любая работа будет в удовольствие. Full HD 1920 x 1080 при 60 Гц разрешение (макс.)', 1, 0, 1);
+(1, 'Филадельфия', 14, 0, 0, 150, 'http://sushi-store/uploads/623255-filadelfiya.jpg', 0, '', 'Лосось, авокадо, мазик, еще шото', 0, 0, 1),
+(2, 'Калифорния', 14, 0, 0, 120, 'http://sushi-store/uploads/433194-5b53a8a291ba8.jpg', 0, '', 'Рис, кунжут, авокадо, еще шото', 0, 0, 1),
+(3, 'Унаги ролл', 14, 0, 0, 95, 'http://sushi-store/uploads/434415-6Унаги-маки.jpg', 0, '', 'Нори, авокадо, икра тобико, и всё как бы', 0, 0, 1),
+(4, 'Филадельфия с угрём', 14, 0, 0, 170, 'http://sushi-store/uploads/48816-179a1e_61128fb87f2b401099076b63701fa4b7-mv2.jpg', 0, '', 'Угорь, лосось, рис, авокадо, японский майонез', 0, 0, 1),
+(5, 'Аляска', 14, 0, 0, 125, 'http://sushi-store/uploads/553643-813720574.jpg', 0, '', 'Тобико, рис, авокадо, кунжут, нори, японский майонез', 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -181,7 +179,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT для таблицы `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `product_order`
