@@ -56,6 +56,10 @@ class ImageUpload
 			);
 		}
 	}
+
+	
+
+	
 	public static function deleteImage($id) 
 	{
 		$product = Products::getProductById($id);
