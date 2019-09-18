@@ -10,7 +10,7 @@ class DB
 			$localhost = 'localhost';
 			$dbname = 'phpshop';
 			$dbuser = 'root';
-			$password = '';
+			$password = 'root';
 			self::$connection = new PDO("mysql:host=$localhost;dbname=$dbname;", $dbuser, $password);
 		}
 		return self::$connection;

@@ -51,11 +51,11 @@ class ProductsController
 	}
 	public function actionAdd()
 	{
+		
 		$title = $_POST['title'] ?? null;
 		$description = $_POST['description'] ?? null;
 		$price = $_POST['price'] ?? null;
 		$categoryId = $_POST['categoryId'] ?? null;
-
 		$pathToImage = ImageUpload::uploadImage();
 
 		$options = array(
@@ -65,7 +65,8 @@ class ProductsController
 			'categoryId' => $categoryId,
 			'image' => $pathToImage
 		);
-		
+	
+	
 		echo Products::createProduct($options);
 
 		return true;

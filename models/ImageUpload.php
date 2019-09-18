@@ -5,7 +5,7 @@ class ImageUpload
 {
 	private static $response = array();
 	private static $upload_dir = 'uploads/';
-	private static $server_url = 'http://sushi-store';
+	private static $server_url = "http://localhost:8888/sushi-store";
 
 	public static function uploadImage()
 	{

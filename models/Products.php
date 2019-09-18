@@ -3,9 +3,8 @@ class Products
 {
 	public static function getProductList() 
 	{
-
+		
 		$db = DB::getConnection();
-
 		$getProducts = $db->prepare("SELECT * from product");
 		$getProducts->setFetchMode(PDO::FETCH_ASSOC);
 		$getProducts->execute();
@@ -18,11 +17,12 @@ class Products
 	{
 		json_encode($options);
 		$db = Db::getConnection();
-		$sql = 'INSERT INTO product (title, price, description, image, categoryId) VALUES (:title, :price, :description, :image, :categoryId)';
+		print_r($options);
+		$sql = "INSERT INTO product (title, price, description, image, categoryId) VALUES (:title, :price, :description, :image, :categoryId)";
 		$result = $db->prepare($sql);
 		$result->bindParam(':title', $options['title'], PDO::PARAM_STR);
-		$result->bindParam(':description', $options['description'], PDO::PARAM_STR);
 		$result->bindParam(':price', $options['price'], PDO::PARAM_INT);
+		$result->bindParam(':description', $options['description'], PDO::PARAM_STR);
 		$result->bindParam(':image', $options['image'], PDO::PARAM_STR);
 		$result->bindParam(':categoryId', $options['categoryId'], PDO::PARAM_INT);
 		if ($result->execute()) {
